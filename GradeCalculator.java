@@ -18,14 +18,14 @@ public class GradeCalculator
     System.out.println("Quiz scores: " + quiz1 + "," + quiz2); 
 
     double Final = 87.58; 
-    System.out.println("Final Exam score :" + Final);
+    System.out.println("Final Exam score: " + Final);
 
     System.out.println("Weekly time spent: " + (135/60) +"hrs" + (135%60) + "mins");
     System.out.println("Average HW grade: " + ((double) (hw1 + hw2 + hw3 + hw4))/4);
-    System.out.println("Average quiz grade: " + (quiz1 + quiz2)/4);
+    System.out.println("Average quiz grade: " + (quiz1 + quiz2)/2);
 
-    double finalGrade = (((double) (hw1 + hw2 + hw3 + hw4))/4*(35.0/100)) + ((quiz1 + quiz2)/4*(15.0/100)) + 
-    (Final/4*(15.0/100)); 
+    double finalGrade = (((double) (hw1 + hw2 + hw3 + hw4))/4*(35.0/100)) + ((quiz1 + quiz2)/2*(15.0/100)) + 
+    (Final*(50.0/100)); 
     System.out.println("Final grade: " + finalGrade);
 
 
